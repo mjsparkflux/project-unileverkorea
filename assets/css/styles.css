@@ -1191,6 +1191,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   width: 85%;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 48px;
 }
 .slide-eft .swiper-slide {
   height: 400px;
@@ -1234,7 +1235,6 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   width: 100%;
   overflow: hidden;
   display: inline-flex;
-  margin: 48px 0;
 }
 .new_brand_category:hover .new_brand_category_text {
   transform: translateY(-100%);

@@ -147,6 +147,7 @@
         width: 85%;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 48px;
     }
     .swiper-slide {
         height: 400px;
@@ -199,7 +200,7 @@
     width: 100%;
     overflow: hidden;
     display: inline-flex;
-    margin: 48px 0;
+    // margin: 48px 0;
     &:hover {
         .new_brand_category_text {
             transform: translateY(-100%);
@@ -215,7 +216,9 @@
             font-weight: 600;
             line-height: 28px;
             color: #333;
-            transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+            transition:
+                transform 0.3s ease-in-out,
+                opacity 0.2s ease-in-out;
         }
     }
     .icon {
@@ -233,7 +236,9 @@
         font-weight: 500;
         line-height: 140%;
         color: #333;
-        transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+        transition:
+            transform 0.3s ease-in-out,
+            opacity 0.2s ease-in-out;
     }
     .new_brand_category_text.type_desc {
         position: absolute;
