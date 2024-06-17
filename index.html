@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8" />
@@ -29,10 +29,11 @@
         />
         <link
             rel="stylesheet"
-            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -253,7 +254,7 @@
                     <span class="sub_title">우리는 매일 전 세계 190개국, 34억명의 사람들과 함께합니다</span>
                 </div>
 
-                <section class="sec-type1 sec-eft">
+                <section class="sec-type1 bg-grey sec-eft">
                     <div class="container">
                         <h2 class="sec-title">유니레버코리아의 브랜드</h2>
                         <a href="#" class="new_brand_category">
@@ -414,10 +415,109 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec-type2 sec-2 bg-grey">
-                    <div class="container">
-                        <h2 class="sec-title">섹션 타이틀</h2>
-                        <div class="sec-content">섹션 내용</div>
+                <section class="sec-type2 sec-2 business">
+                    <div class="container section_inner">
+                        <div class="title_area">
+                            <h2 class="sec-title">미래를 만드는 약속</h2>
+                            <span class="sub_title">지속가능한 삶의 일상화를 위한 유니레버코리아의 책임</span>
+                        </div>
+
+                        <!-- <div class="sec-content">섹션 내용</div> -->
+                        <div class="content_area">
+                            <div class="business-list">
+                                <ul>
+                                    <li class="busi01 active">
+                                        <a onclick="go01()" class="pc-show"><em></em><span>환경보호</span></a>
+                                        <a href="#" class="mo-show"><em></em><span>환경보호</span></a>
+                                        <div class="mo txt_area">
+                                            <div class="tit">지구를 건강하게</div>
+                                            <div class="sub_tit">
+                                                탄소 배출 감소, 지속 가능한 포장재 사용, 폐기물 감소 등 환경 보호를 위한
+                                                조치로써 기후 변화에 대응하고 자연 보전을 보전하는데 기여하기 위한
+                                                노력을 기울이고 있습니다.
+                                            </div>
+                                            <div class="img_area">
+                                                <img src="./assets/images/sustainability.jpg" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="busi02">
+                                        <a onclick="go02()" class="pc-show"><em></em><span>사회적 책임</span></a>
+                                        <a href="#" class="mo-show"><em></em><span>사회적 책임</span></a>
+                                        <div class="mo txt_area">
+                                            <div class="tit">형평성, 다양성, 포용성</div>
+                                            <div class="sub_tit">
+                                                공정한 노동 환경을 조성하고, 다양성과 포용성을 증진하며, 지역 사회와의
+                                                상생을 도모합니다.
+                                            </div>
+                                            <div class="img_area">
+                                                <img src="./assets/images/work.jpg" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="busi03">
+                                        <a onclick="go03()" class="pc-show"><em></em><span>투명성</span></a>
+                                        <a href="#" class="mo-show"><em></em><span>투명성</span></a>
+                                        <div class="mo txt_area">
+                                            <div class="tit">공급망 투명성</div>
+                                            <div class="sub_tit">
+                                                비즈니스 운영에 있어서 공급망 전반에 걸친 공정성 향상과 투명성을 높이고,
+                                                윤리적인 비즈니스 관행을 준수합니다.
+                                            </div>
+                                            <div class="img_area">
+                                                <img src="./assets/images/supply chain.jpg" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper busiSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide bg01">
+                                        <div class="img_area">
+                                            <img src="/assets/images/sustainability.jpg" />
+                                        </div>
+                                        <div class="txt_area">
+                                            <div class="tit">지구를 건강하게</div>
+                                            <div class="desc">
+                                                탄소 배출 감소, 지속 가능한 포장재 사용, 폐기물 감소 등 환경 보호를 위한
+                                                조치로써 기후 변화에 대응하고 자연 보전을 보전하는데 기여하기 위한
+                                                노력을 기울이고 있습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg02">
+                                        <div class="img_area">
+                                            <img src="/assets/images/work.jpg" />
+                                        </div>
+                                        <div class="txt_area">
+                                            <div class="tit">형평성, 다양성, 포용성</div>
+                                            <div class="desc">
+                                                공정한 노동 환경을 조성하고, 다양성과 포용성을 증진하며, 지역 사회와의
+                                                상생을 도모합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide bg03">
+                                        <div class="img_area">
+                                            <img src="/assets/images/supply chain.jpg" />
+                                        </div>
+                                        <div class="txt_area">
+                                            <div class="tit">공급망 투명성</div>
+
+                                            <div class="desc">
+                                                비즈니스 운영에 있어서 공급망 전반에 걸친 공정성 향상과 투명성을 높이고,
+                                                윤리적인 비즈니스 관행을 준수합니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn_area">
+                                <div class="swiper-pagination-busi"></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <br />
