@@ -279,7 +279,7 @@ legend {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 744px) {
   .container {
     padding: 0 30px;
   }
@@ -366,7 +366,8 @@ legend {
 #header #logo a {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 80px;
+  width: 80px;
   font-size: 1.4rem;
   color: #fff;
 }
@@ -423,7 +424,7 @@ legend {
   padding: 7px 20px 5px;
   border: 1px solid #c6c6c6;
   border-radius: 5px;
-  color: #555555;
+  color: #444444;
 }
 #header #gnb .m-util a.active {
   background: #246beb;
@@ -440,7 +441,7 @@ legend {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  background: rgba(36, 107, 235, 0.05);
+  background: rgba(0, 94, 255, 0.05);
   border-radius: 5px;
 }
 #header #gnb .top-menu dl.active dt a {
@@ -482,7 +483,7 @@ legend {
   position: relative;
   display: block;
   padding: 3px 0 3px 16px;
-  color: #555555;
+  color: #444444;
 }
 #header #gnb .top-menu dl dd a.active {
   color: #246beb;
@@ -712,11 +713,13 @@ legend {
 }
 
 .sec-type1,
-.sec-type2 {
+.sec-type2,
+.sec-type3 {
   padding: 50px 0;
 }
 .sec-type1 .sec-title,
-.sec-type2 .sec-title {
+.sec-type2 .sec-title,
+.sec-type3 .sec-title {
   padding-bottom: 30px;
   font-size: 1.875rem;
   color: #000;
@@ -729,6 +732,16 @@ legend {
     padding: 150px 0;
   }
 }
+.sec-type3 ul {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  color: #1e1e1e;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 /* home_footer */
 footer {
   background: #f9f9f9;
@@ -1048,7 +1061,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   width: 80px;
   height: 80px;
   margin: 0;
-  background: rgba(36, 107, 235, 0.5);
+  background: rgba(0, 94, 255, 0.5);
   transform: translateY(-50%);
 }
 .slide-eft .swiper-button-prev::after,
@@ -1062,7 +1075,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   right: -100px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 744px) {
   .slide-eft .swiper {
     width: 95%;
   }

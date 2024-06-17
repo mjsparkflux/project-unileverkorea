@@ -99,7 +99,8 @@
     #logo {
         a {
             @include flexitems;
-            height: $hdH;
+            height: $hdH-xl;
+            width: $hdH-xl;
             font-size: 1.4rem;
             color: $white;
         }
@@ -411,7 +412,9 @@
             .layer-search {
                 opacity: 0;
                 visibility: hidden;
-                transition: opacity 0.5s ease, visibility 0.5s ease;
+                transition:
+                    opacity 0.5s ease,
+                    visibility 0.5s ease;
                 &.fade-in {
                     opacity: 1;
                     visibility: visible;
@@ -478,7 +481,8 @@
 
 // section
 .sec-type1,
-.sec-type2 {
+.sec-type2,
+.sec-type3 {
     padding: 50px 0;
     .sec-title {
         padding-bottom: 30px;
@@ -493,7 +497,17 @@
         padding: 150px 0;
     }
 }
-
+.sec-type3 {
+    ul {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+        color: #1e1e1e;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
 // footer
 /* home_footer */
 footer {
