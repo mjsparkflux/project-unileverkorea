@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>title</title>
+        <title>Document</title>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="페이지 제목" />
         <meta property="og:description" content="페이지 설명" />
@@ -14,11 +14,10 @@
         <meta name="twitter:description" content="페이지 설명" />
         <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
         <meta name="twitter:domain" content="사이트 명" />
+        <!-- css -->
         <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
             rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css"
         />
         <link
             rel="stylesheet"
@@ -26,6 +25,8 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -40,13 +41,12 @@
         </div>
         <div id="wrap">
             <!-- 60px 스크롤시 .active 추가 -->
-            <header id="header" class="theme-dark">
+            <header id="header" class="">
                 <div class="container">
                     <h1 id="logo">
                         <a href="/">logo</a>
                     </h1>
                     <nav id="gnb">
-                        <!-- 메뉴 활성화 checked 추가 -->
                         <input type="checkbox" name="btnMenu" id="btnMenu" class="blind" />
                         <label for="btnMenu" class="label-menu">
                             <span class="bar"></span>
@@ -55,15 +55,15 @@
                             <span class="blind">전체메뉴 보기</span>
                         </label>
                         <div class="menu-wrap">
-                            <!-- <div class="m-util">
+                            <div class="m-util">
                                 <a href="#" class="active">KOR</a>
                                 <a href="#">ENG</a>
-                            </div> -->
+                            </div>
                             <div class="top-menu">
                                 <!-- mobile 메뉴 클릭시 .active 추가 -->
                                 <dl class="">
                                     <dt>
-                                        <a href="./about-company.html">menu1</a>
+                                        <a href="./about-company.html">about</a>
                                     </dt>
                                     <dd>
                                         <a href="#">menu1-1</a>
@@ -140,82 +140,6 @@
                     </div>
                 </div>
             </header>
-            <div class="swiper slide-intro">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture>
-                            <!-- desktop -->
-                            <source
-                                srcset="
-                                    https://images.unsplash.com/photo-1618522284999-3430d5f5f2da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                                "
-                                media="(min-width: 1280px)"
-                            />
-                            <!-- mobile & tablet -->
-                            <source
-                                srcset="
-                                    https://images.unsplash.com/photo-1651340608985-d25cc73156e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                                "
-                            />
-                            <img
-                                src="https://images.unsplash.com/photo-1651340608985-d25cc73156e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt=""
-                            />
-                        </picture>
-                        <div class="slide-txt">
-                            <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <img
-                                src="https://images.unsplash.com/photo-1712697889651-af232d2df3c8?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt=""
-                            />
-                        </picture>
-                        <div class="slide-txt">
-                            <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
-                            <img
-                                src="https://images.unsplash.com/photo-1650099667208-5c2110041c5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt=""
-                            />
-                        </picture>
-                        <div class="slide-txt">
-                            <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-                <!-- Pause/Play button -->
-                <button class="swiper-button-pause">Pause</button>
-            </div>
             <main id="main">
                 <section class="sec-type1 sec-eft">
                     <div class="container">

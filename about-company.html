@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>title</title>
+        <title>Document</title>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="페이지 제목" />
         <meta property="og:description" content="페이지 설명" />
@@ -14,11 +14,10 @@
         <meta name="twitter:description" content="페이지 설명" />
         <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
         <meta name="twitter:domain" content="사이트 명" />
+        <!-- css -->
         <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
             rel="stylesheet"
-            as="style"
-            crossorigin
-            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css"
         />
         <link
             rel="stylesheet"
@@ -26,6 +25,8 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- js -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -40,13 +41,12 @@
         </div>
         <div id="wrap">
             <!-- 60px 스크롤시 .active 추가 -->
-            <header id="header" class="theme-dark">
+            <header id="header" class="">
                 <div class="container">
                     <h1 id="logo">
                         <a href="/">logo</a>
                     </h1>
                     <nav id="gnb">
-                        <!-- 메뉴 활성화 checked 추가 -->
                         <input type="checkbox" name="btnMenu" id="btnMenu" class="blind" />
                         <label for="btnMenu" class="label-menu">
                             <span class="bar"></span>
@@ -55,15 +55,15 @@
                             <span class="blind">전체메뉴 보기</span>
                         </label>
                         <div class="menu-wrap">
-                            <!-- <div class="m-util">
+                            <div class="m-util">
                                 <a href="#" class="active">KOR</a>
                                 <a href="#">ENG</a>
-                            </div> -->
+                            </div>
                             <div class="top-menu">
                                 <!-- mobile 메뉴 클릭시 .active 추가 -->
                                 <dl class="">
                                     <dt>
-                                        <a href="./about-company.html">menu1</a>
+                                        <a href="./about-company.html">about</a>
                                     </dt>
                                     <dd>
                                         <a href="#">menu1-1</a>
@@ -213,8 +213,6 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-                <!-- Pause/Play button -->
-                <button class="swiper-button-pause">Pause</button>
             </div>
             <main id="main">
                 <section class="sec-type1 sec-eft">
