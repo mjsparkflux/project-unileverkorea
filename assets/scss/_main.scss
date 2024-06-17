@@ -193,3 +193,104 @@
         width: 100%;
     }
 }
+
+.new_brand_category {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: inline-flex;
+    margin: 48px 0;
+    &:hover {
+        .new_brand_category_text {
+            transform: translateY(-100%);
+        }
+        .new_brand_category_text.type_desc {
+            transform: translateY(0);
+        }
+
+        .new_brand_category_text {
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 28px;
+            color: #333;
+            transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+        }
+    }
+    .icon {
+        margin-left: 10px;
+        color: #888;
+        transition: all 0.2s ease-out;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .new_brand_category_text {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 140%;
+        color: #333;
+        transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    }
+    .new_brand_category_text.type_desc {
+        position: absolute;
+        transform: translateY(100%);
+        color: #1f36c7;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.notice_banner {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    animation: 1.2s movetop ease-out forwards;
+    animation-delay: 1.2s;
+    margin-top: 120px;
+}
+.notice_item {
+    display: inline-block;
+    width: calc(50% - 16px);
+    height: 100%;
+    border-radius: 12px;
+    padding: 38.5px 28px 40px 20px;
+    position: relative;
+    background: #117ce9;
+    &:nth-child(2) {
+        margin: 0;
+        background: #0d47a1;
+    }
+    a {
+        margin: 0;
+        position: absolute;
+        bottom: 21px;
+        right: 32px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: -1px;
+        padding: 0 33px;
+        border: #1e1e1e 1px solid;
+        background-color: #1e1e1e;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+            background-color: #fff;
+            color: #1e1e1e;
+        }
+    }
+}
+.notice_item p {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin: 0;
+}

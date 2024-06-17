@@ -43,7 +43,39 @@
     background: rgba($black, 0.3);
     backdrop-filter: blur(30px);
 }
-
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    padding: 0 32px;
+    color: #444;
+    border-radius: 100px;
+    text-align: center;
+    border: 1px solid #444;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+    background-color: transparent;
+    font-weight: 500;
+    margin-top: 46px;
+}
+.btn {
+    svg {
+        width: 16px;
+        height: 16px;
+        stroke: #444;
+        margin-left: 5px;
+        text-align: center;
+        align-items: center;
+    }
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
 // swiper
 .swiper {
     width: 100%;
@@ -412,9 +444,7 @@
             .layer-search {
                 opacity: 0;
                 visibility: hidden;
-                transition:
-                    opacity 0.5s ease,
-                    visibility 0.5s ease;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
                 &.fade-in {
                     opacity: 1;
                     visibility: visible;
@@ -483,12 +513,21 @@
 .sec-type1,
 .sec-type2,
 .sec-type3 {
-    padding: 50px 0;
+    // padding: 50px 0;
+    margin: 120px 0;
     .sec-title {
-        padding-bottom: 30px;
-        font-size: 1.875rem;
+        padding-bottom: $spacing-m;
+        font-size: $font-size-title;
+        line-height: $line-height-m;
+        letter-spacing: $letter-spacing-title;
         color: $black;
         text-align: left;
+    }
+    .sub_title {
+        font-size: $font-size-xxxl;
+        line-height: $line-height-m;
+        letter-spacing: $letter-spacing-subtitle;
+        font-weight: $font-weight-medium;
     }
 }
 @media screen and (min-width: $breakpoint-xl) {
@@ -508,23 +547,29 @@
         border-radius: 100px;
         background-color: $white;
         color: $white;
-        margin: $spacing-10 0;
-        gap: $spacing-3;
+        margin: $spacing-xxxxl 0;
+        gap: $spacing-xs;
         a {
             position: relative;
             @include flexCenter;
             text-align: center;
             padding: 8px 24px;
-            transition:
-                color 0.3s,
-                opacity 0.3s;
+            transition: color 0.3s, opacity 0.3s;
             border-radius: 90px;
             border: 1px solid $gray-40;
+            span {
+                font-size: $font-size-xl;
+                line-height: 32px;
+                letter-spacing: -0.2px;
+                font-weight: $font-weight-medium;
+            }
+
             &.tab--active {
                 background-color: $primary-80;
                 border: 1px solid $primary-80;
                 span {
                     color: $white;
+                    font-weight: $font-weight-medium;
                 }
             }
         }
@@ -541,12 +586,12 @@
     }
     ul {
         display: flex;
-        gap: 20px;
+        gap: $spacing-l;
         width: 100%;
         justify-content: space-between;
         color: #1e1e1e;
-        font-weight: 700;
-        margin-bottom: 20px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 80px;
     }
     li {
         flex-grow: 1;
@@ -560,6 +605,7 @@
             }
             .desc_box p {
                 color: #005eff;
+                text-decoration: none;
             }
         }
     }
@@ -589,6 +635,16 @@
             font-size: 16px;
             line-height: 22px;
             font-weight: 500;
+        }
+    }
+    .btn-container {
+        @include flexCenter;
+    }
+    .btn {
+        &:hover {
+            background-color: #f5f5f5;
+            color: #000;
+            border: #f5f5f5 1px solid;
         }
     }
 }

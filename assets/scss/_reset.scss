@@ -41,7 +41,8 @@ dl,
 ul,
 ol,
 menu,
-li {
+li,
+a {
     list-style: none;
 }
 
@@ -131,9 +132,9 @@ input {
 body {
     font-size: 17px;
     line-height: 1.5;
-    font-family: 'Pretendard GOV Variable', 'Pretendard GOV', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-        'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-        'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+        'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        sans-serif;
     color: $gray-90;
     font-weight: 400;
 }
@@ -168,7 +169,7 @@ a {
 
         &:active,
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
 }
