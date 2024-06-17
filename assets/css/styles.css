@@ -741,6 +741,30 @@ legend {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.sec-type3 li {
+  flex-grow: 1;
+  flex-basis: 0;
+  flex-shrink: 1;
+  height: 265px;
+  border-radius: 10px;
+}
+.sec-type3 .thumb_box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.sec-type3 .thumb_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: scale 400ms;
+}
 
 /* home_footer */
 footer {
