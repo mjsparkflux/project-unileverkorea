@@ -21,7 +21,7 @@ $primary-40: #5089ef; // (3 : 1 with white)
 $primary-50: #246beb; // base (4.5 : 1 with white), 입력창 활성화
 $primary-60: #1d56bc;
 $primary-70: #16408d;
-$primary-80: #0e2b5e;
+$primary-80: #0e185a;
 $primary-90: #07152f;
 $primary-100: #000000;
 
@@ -144,6 +144,23 @@ $info-90: #040a1a;
 
 $fontSize: 17px;
 $fontFamily: 'Noto Sans KR', sans-serif;
+
+$spacing-1: 2px;
+$spacing-2: 4px;
+$spacing-3: 8px;
+$spacing-4: 12px;
+$spacing-5: 16px;
+$spacing-6: 20px;
+$spacing-7: 24px;
+$spacing-8: 32px;
+$spacing-9: 40px;
+$spacing-10: 48px;
+
+$spacing-content-area-1: 80px;
+$spacing-content-area-2: 64px;
+$spacing-content-area-3: 40px;
+$spacing-content-area-4: 32px;
+$spacing-content-area-5: 24px;
 
 // 반응형 미디어 쿼리
 $breakpoint-sm: 430px;

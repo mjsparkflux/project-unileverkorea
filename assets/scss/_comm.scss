@@ -488,7 +488,7 @@
         padding-bottom: 30px;
         font-size: 1.875rem;
         color: $black;
-        text-align: center;
+        text-align: left;
     }
 }
 @media screen and (min-width: $breakpoint-xl) {
@@ -498,6 +498,47 @@
     }
 }
 .sec-type3 {
+    .tab-list {
+        text-align: left;
+    }
+    .tab-list-inner {
+        position: relative;
+        display: inline-flex;
+        padding: 8px;
+        border-radius: 100px;
+        background-color: $white;
+        color: $white;
+        margin: $spacing-10 0;
+        gap: $spacing-3;
+        a {
+            position: relative;
+            @include flexCenter;
+            text-align: center;
+            padding: 8px 24px;
+            transition:
+                color 0.3s,
+                opacity 0.3s;
+            border-radius: 90px;
+            border: 1px solid $gray-40;
+            &.tab--active {
+                background-color: $primary-80;
+                border: 1px solid $primary-80;
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .tab-train {
+        display: block;
+        position: absolute;
+        top: 8rem;
+        bottom: 8rem;
+        left: 8rem;
+        min-width: 134rem;
+        background: #fff;
+        border-radius: 100px;
+    }
     ul {
         display: flex;
         gap: 20px;
@@ -513,6 +554,14 @@
         flex-shrink: 1;
         height: 265px;
         border-radius: 10px;
+        a:hover {
+            .thumb_box img {
+                scale: 110%;
+            }
+            .desc_box p {
+                color: #005eff;
+            }
+        }
     }
     .thumb_box {
         width: 100%;
@@ -529,6 +578,18 @@
         position: absolute;
         object-fit: cover;
         transition: scale 400ms;
+    }
+    .desc_box {
+        p {
+            margin-top: 20px;
+        }
+        span {
+            margin-top: 12px;
+            color: #aaa;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+        }
     }
 }
 // footer

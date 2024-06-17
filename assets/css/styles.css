@@ -723,7 +723,7 @@ legend {
   padding-bottom: 30px;
   font-size: 1.875rem;
   color: #000;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (min-width: 1280px) {
@@ -731,6 +731,47 @@ legend {
   .sec-type2 {
     padding: 150px 0;
   }
+}
+.sec-type3 .tab-list {
+  text-align: left;
+}
+.sec-type3 .tab-list-inner {
+  position: relative;
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #fff;
+  margin: 48px 0;
+  gap: 8px;
+}
+.sec-type3 .tab-list-inner a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px 24px;
+  transition: color 0.3s, opacity 0.3s;
+  border-radius: 90px;
+  border: 1px solid #c6c6c6;
+}
+.sec-type3 .tab-list-inner a.tab--active {
+  background-color: #0e185a;
+  border: 1px solid #0e185a;
+}
+.sec-type3 .tab-list-inner a.tab--active span {
+  color: #fff;
+}
+.sec-type3 .tab-train {
+  display: block;
+  position: absolute;
+  top: 8rem;
+  bottom: 8rem;
+  left: 8rem;
+  min-width: 134rem;
+  background: #fff;
+  border-radius: 100px;
 }
 .sec-type3 ul {
   display: flex;
@@ -748,6 +789,12 @@ legend {
   height: 265px;
   border-radius: 10px;
 }
+.sec-type3 li a:hover .thumb_box img {
+  scale: 110%;
+}
+.sec-type3 li a:hover .desc_box p {
+  color: #005eff;
+}
 .sec-type3 .thumb_box {
   width: 100%;
   height: 100%;
@@ -764,6 +811,16 @@ legend {
   -o-object-fit: cover;
      object-fit: cover;
   transition: scale 400ms;
+}
+.sec-type3 .desc_box p {
+  margin-top: 20px;
+}
+.sec-type3 .desc_box span {
+  margin-top: 12px;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 /* home_footer */
