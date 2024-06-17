@@ -1188,15 +1188,64 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
 }
 .slide-eft .swiper {
   overflow: visible;
-  width: 85%;
+  width: 88%;
   margin-left: 0;
   margin-right: 0;
   margin-top: 48px;
 }
 .slide-eft .swiper-slide {
-  height: 400px;
+  height: 340px;
   background: #f8f8f8;
   border-radius: 20px;
+  overflow: hidden;
+}
+.slide-eft .new_brand_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+.slide-eft .new_brand_link:hover img, .slide-eft .new_brand_link:focus img {
+  transform: translate(-50%, -50%) scale(1.125);
+}
+.slide-eft .new_brand_link img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease-out;
+}
+.slide-eft .new_brand_link::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 84.58%);
+  mix-blend-mode: darken;
+  transform: rotate(-180deg);
+  z-index: 1;
+}
+.slide-eft .new_brand_name {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 10;
 }
 .slide-eft .swiper-button-prev,
 .slide-eft .swiper-button-next {
