@@ -137,6 +137,37 @@
 }
 
 // main
+.container-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sub_title {
+        font-size: $font-size-xxxxl;
+        line-height: $line-height-m;
+        letter-spacing: $letter-spacing-subtitle;
+        font-weight: $font-weight-medium;
+        text-align: center;
+    }
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    background: url(https://img.freepik.com/free-photo/volunteers-teaming-up-organize-donations-charity_23-2149230523.jpg?t=st=1718612845~exp=1718616445~hmac=de8b58b831d6bdcd3f69dac7f5bf97bce0ce9f25a2807bf776d3ea791ed483e3&w=1380)
+        no-repeat 0 0 / cover fixed;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    text-align: center;
+    font-size: $font-size-title;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 .sec-eft {
     overflow: hidden;
 }
