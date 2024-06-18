@@ -442,6 +442,7 @@
                     height: 60px;
                     font-family: inherit;
                     &::before {
+                        content: '';
                         display: block;
                         width: 60px;
                         height: 60px;
@@ -480,10 +481,10 @@
                     background-image: url('/assets/images/leaf-outline.png');
                 }
                 &.busi02 a::before {
-                    background-image: url('/assets/images/work.jpg');
+                    background-image: url('/assets/images/people-outline.png');
                 }
                 &.busi03 a::before {
-                    background-image: url('/assets/images/supply chain.jpg');
+                    background-image: url('/assets/images/eye-outline.png');
                 }
                 &.active a::after {
                     width: 135px;
@@ -495,6 +496,7 @@
 
     ul li a:hover::before,
     ul li.active a::before {
+        background-image: url('/assets/images/leaf-outline.png');
         transition: 0.5s;
         background-repeat: no-repeat;
         background-size: 50%;
@@ -508,17 +510,17 @@
 
     ul li.busi01 a:hover::before,
     ul li.busi01.active a::before {
-        background-image: url('/asset/images/common/main23/main_pro01_hover.png');
+        background-image: url('/assets/images/leaf-outline.png');
     }
 
     ul li.busi02 a:hover::before,
     ul li.busi02.active a::before {
-        background-image: url('/asset/images/common/main23/main_pro02_hover.png');
+        background-image: url('/assets/images/people-outline.png');
     }
 
     ul li.busi03 a:hover::before,
     ul li.busi03.active a::before {
-        background-image: url('/asset/images/common/main23/main_pro03_hover.png');
+        background-image: url('/assets/images/eye-outline.png');
     }
 
     ul li.active a::after {

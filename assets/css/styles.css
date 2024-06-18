@@ -1397,6 +1397,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   font-family: inherit;
 }
 .business .business-list ul li a::before {
+  content: "";
   display: block;
   width: 60px;
   height: 60px;
@@ -1433,10 +1434,10 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   background-image: url("/assets/images/leaf-outline.png");
 }
 .business .business-list ul li.busi02 a::before {
-  background-image: url("/assets/images/work.jpg");
+  background-image: url("/assets/images/people-outline.png");
 }
 .business .business-list ul li.busi03 a::before {
-  background-image: url("/assets/images/supply chain.jpg");
+  background-image: url("/assets/images/eye-outline.png");
 }
 .business .business-list ul li.active a::after {
   width: 135px;
@@ -1444,6 +1445,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
 }
 .business ul li a:hover::before,
 .business ul li.active a::before {
+  background-image: url("/assets/images/leaf-outline.png");
   transition: 0.5s;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -1455,15 +1457,15 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
 }
 .business ul li.busi01 a:hover::before,
 .business ul li.busi01.active a::before {
-  background-image: url("/asset/images/common/main23/main_pro01_hover.png");
+  background-image: url("/assets/images/leaf-outline.png");
 }
 .business ul li.busi02 a:hover::before,
 .business ul li.busi02.active a::before {
-  background-image: url("/asset/images/common/main23/main_pro02_hover.png");
+  background-image: url("/assets/images/people-outline.png");
 }
 .business ul li.busi03 a:hover::before,
 .business ul li.busi03.active a::before {
-  background-image: url("/asset/images/common/main23/main_pro03_hover.png");
+  background-image: url("/assets/images/eye-outline.png");
 }
 .business ul li.active a::after {
   width: 135px;
