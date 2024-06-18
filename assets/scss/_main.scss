@@ -331,82 +331,6 @@
     }
 }
 
-// .business {
-//     .section_inner {
-//         padding: 90px 60px;
-//         width: calc(100% - 120px);
-//     }
-//     .content_area {
-//         display: flex;
-//         position: relative;
-//     }
-//     .business-list {
-//         width: 403px;
-//         ul {
-//             margin: 58px 0;
-//             width: 350px;
-//         }
-//         li {
-//             list-style: none;
-//             font-size: 19px;
-//             margin-bottom: 19px;
-//         }
-//         a {
-//             display: flex;
-//             align-items: center;
-//             cursor: pointer;
-//             height: 60px;
-//             &::before {
-//                 // content: '\f06c';
-//                 display: block;
-//                 width: 60px;
-//                 height: 60px;
-//                 margin-right: 20px;
-//                 border-radius: 60px;
-//                 background-repeat: no-repeat;
-//                 background-size: 50%;
-//                 background-color: #f8f8f8;
-//                 background-position: center;
-//                 border: 1px solid #f8f8f8;
-//                 position: absolute;
-//             }
-//             &::after {
-//                 content: '';
-//                 display: inline-block;
-//                 width: 0;
-//                 height: 1px;
-//                 margin-left: 27px;
-//                 background: #665852;
-//                 vertical-align: super;
-//             }
-//             span {
-//                 display: block;
-//                 margin-left: 80px;
-//             }
-//         }
-//         li.busi01 {
-//             a {
-//                 &::before {
-//                     background-image: url('/assets/images/sustainability.jpg');
-//                 }
-//             }
-//         }
-//         li.busi02 {
-//             a {
-//                 &::before {
-//                     background-image: url('/assets/images/work.jpg');
-//                 }
-//             }
-//         }
-//         li.busi03 {
-//             a {
-//                 &::before {
-//                     background-image: url('/assets/images/supply chain.jpg');
-//                 }
-//             }
-//         }
-//     }
-// }
 .business {
     display: flex;
     justify-content: center;
@@ -435,6 +359,7 @@
                 list-style: none;
                 font-size: 20px;
                 margin-bottom: 19px;
+
                 a {
                     display: flex;
                     align-items: center;
@@ -504,8 +429,12 @@
         background-position: center;
     }
 
-    ul li.active a::before {
-        border: 1px solid #665852;
+    ul {
+        li.active {
+            a::before {
+                border: 1px solid #665852;
+            }
+        }
     }
 
     ul li.busi01 a:hover::before,

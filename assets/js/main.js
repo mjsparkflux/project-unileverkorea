@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         isPaused = !isPaused
     })
 
-    var swiper = new Swiper('.slide-eft .swiper', {
+    var swiperEft = new Swiper('.slide-eft .swiper', {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
@@ -70,10 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
             slideChange: function () {
                 var realIndex = this.realIndex % 3
                 $('.business-list ul li').removeClass('active')
-                $('.business-list ul li').eq(this.realIndex).addClass('active')
+                $('.business-list ul li').eq(realIndex).addClass('active')
             },
         },
     })
+
     function go01() {
         busiswiper.slideToLoop(0, 1000, false) // 루프 사용 시 slideToLoop 사용
     }
@@ -84,15 +85,13 @@ document.addEventListener('DOMContentLoaded', function () {
         busiswiper.slideToLoop(2, 1000, false) // 루프 사용 시 slideToLoop 사용
     }
 
-    $('.business .btn_area .btn').click(function () {
-        if ($(this).hasClass('play')) {
-            busiswiper.autoplay.stop()
-            $(this).removeClass('play')
-            $(this).addClass('stop')
-        } else if ($(this).hasClass('stop')) {
-            busiswiper.autoplay.start()
-            $(this).removeClass('stop')
-            $(this).addClass('play')
-        }
+    // Add click event listeners to the list items
+    const items = document.querySelectorAll('.business-list ul li')
+    items.forEach((item, index) => {
+        item.addEventListener('click', function () {
+            items.forEach((i) => i.classList.remove('active')) // Remove 'active' class from all items
+            item.classList.add('active') // Add 'active' class to the clicked item
+            busiswiper.slideToLoop(index) // Slide to the clicked item
+        })
     })
 })
