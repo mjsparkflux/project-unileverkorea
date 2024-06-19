@@ -755,7 +755,6 @@ legend {
 .sec-type1 .sec-title,
 .sec-type2 .sec-title,
 .sec-type3 .sec-title {
-  padding-bottom: 16px;
   font-size: 40px;
   line-height: 140%;
   letter-spacing: 0.5px;
@@ -769,6 +768,16 @@ legend {
   line-height: 140%;
   letter-spacing: -0.5px;
   font-weight: 500;
+}
+.sec-type1 .pb-s,
+.sec-type2 .pb-s,
+.sec-type3 .pb-s {
+  padding-bottom: 16px;
+}
+.sec-type1 .pb-l,
+.sec-type2 .pb-l,
+.sec-type3 .pb-l {
+  padding-bottom: 48px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1470,6 +1479,10 @@ video {
   right: -100px;
 }
 
+.sec-content {
+  position: relative;
+}
+
 @media screen and (min-width: 744px) {
   .slide-eft .swiper {
     width: 95%;
@@ -1480,9 +1493,14 @@ video {
     width: 100%;
   }
 }
+.sec-type1 .sec-content .swiper {
+  margin-top: 24px;
+}
+
 .new_brand_category {
   position: relative;
   width: 100%;
+  height: 40px;
   overflow: hidden;
   display: inline-flex;
 }
@@ -1516,15 +1534,14 @@ video {
   font-weight: 500;
   line-height: 140%;
   color: #333;
+  z-index: 2;
   transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 .new_brand_category .new_brand_category_text.type_desc {
   position: absolute;
+  z-index: 1;
   transform: translateY(100%);
   color: #1f36c7;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .business {
@@ -1590,6 +1607,7 @@ video {
 }
 .business .business-list ul li a span {
   display: block;
+  height: 60px;
   margin-left: 80px;
 }
 .business .business-list ul li a:hover::before, .business .business-list ul li a.active::before {

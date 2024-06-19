@@ -517,7 +517,6 @@
 .sec-type3 {
     margin: 120px 0;
     .sec-title {
-        padding-bottom: $spacing-m;
         font-size: $font-size-title;
         line-height: $line-height-m;
         letter-spacing: $letter-spacing-title;
@@ -529,6 +528,12 @@
         line-height: $line-height-m;
         letter-spacing: $letter-spacing-subtitle;
         font-weight: $font-weight-medium;
+    }
+    .pb-s {
+        padding-bottom: $spacing-m;
+    }
+    .pb-l {
+        padding-bottom: $spacing-xxxxl;
     }
 }
 @media screen and (min-width: $breakpoint-xl) {
