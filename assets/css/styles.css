@@ -1051,6 +1051,14 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   transform: rotate(45deg);
 }
 
+@keyframes mainScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
 .slide-intro {
   position: relative;
 }
@@ -1088,7 +1096,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   display: none;
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   z-index: 10;
   background: #000;
   color: #fff;
@@ -1156,6 +1164,36 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
 .slide-intro .swiper-pagination span {
   font-weight: bold;
 }
+.slide-intro .scrolling {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  z-index: 10;
+  color: white;
+  transform-origin: right bottom;
+  transform: rotate(90deg);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.slide-intro .scrolling .gage {
+  width: 80px;
+  height: 2px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+  overflow: hidden;
+}
+.slide-intro .scrolling .gage .gage_bar {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  animation: mainScroll 1s infinite linear;
+}
 
 @media screen and (min-width: 1280px) {
   .slide-intro .swiper-button-pause {
@@ -1163,7 +1201,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   }
   .slide-intro .slide-txt {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
   .slide-intro .slide-txt span {
     font-size: 1.2rem;
@@ -1177,6 +1215,9 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   }
   .slide-intro img {
     height: 820px;
+  }
+  .slide-intro .scrolling {
+    right: 60px;
   }
 }
 .container-banner {
@@ -1197,11 +1238,9 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 80%;
-  background: url(https://img.freepik.com/free-photo/volunteers-teaming-up-organize-donations-charity_23-2149230523.jpg?t=st=1718612845~exp=1718616445~hmac=de8b58b831d6bdcd3f69dac7f5bf97bce0ce9f25a2807bf776d3ea791ed483e3&w=1380) no-repeat 0 0/cover fixed;
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
+  height: 300px;
+  width: 65%;
+  background: url(https://img.freepik.com/free-photo/best-friends-having-beauty-treatment-home_23-2148976860.jpg?t=st=1718758790~exp=1718762390~hmac=fa7764c24af71c2628b2b3a52d44f27ecf2e392821eaaff199328f96e2e30b28&w=1800) no-repeat 0 0/cover fixed;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -1209,6 +1248,45 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 80px;
+  border-radius: 20px;
+}
+
+#logos {
+  height: 100vh;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#logos .text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#logos .text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+}
+#logos .text p:not(:first-of-type) {
+  margin-top: 15px;
+}
+#logos .text1 {
+  transform: translateY(-50%);
+}
+#logos .text2 {
+  transform: translateY(150%);
+}
+#logos .cover {
+  width: 100%;
+  height: 100%;
+  background: #0d47a1;
+  -webkit-clip-path: circle(17% at 50% 140%);
+          clip-path: circle(17% at 50% 140%);
 }
 
 .sec-eft {
@@ -1224,6 +1302,10 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   margin-left: 0;
   margin-right: 0;
   margin-top: 48px;
+}
+.slide-eft .swiper:hover .swiper-button-next,
+.slide-eft .swiper:hover .swiper-button-prev {
+  opacity: 1;
 }
 .slide-eft .swiper-slide {
   height: 340px;
@@ -1287,8 +1369,10 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   width: 80px;
   height: 80px;
   margin: 0;
-  background: rgba(0, 94, 255, 0.5);
+  opacity: 0;
+  color: #fff;
   transform: translateY(-50%);
+  transition: opacity 0.3s;
 }
 .slide-eft .swiper-button-prev::after,
 .slide-eft .swiper-button-next::after {

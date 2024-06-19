@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         centeredSlides: true,
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 80000,
             disableOnInteraction: false,
         },
         pagination: {

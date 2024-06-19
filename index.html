@@ -38,6 +38,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script defer src="./assets/js/scroll.js"></script>
         <script defer src="./assets/js/comm.js"></script>
         <script defer src="./assets/js/main.js"></script>
     </head>
@@ -113,21 +114,11 @@
                                     <dt>
                                         <a href="#">고객문의</a>
                                     </dt>
-                                    <!-- <dd>
-                                        <a href="#">menu2-1</a>
-                                        <a href="#">menu2-2</a>
-                                        <a href="#">menu2-3</a>
-                                    </dd> -->
                                 </dl>
                                 <dl>
                                     <dt>
                                         <a href="#">채용</a>
                                     </dt>
-                                    <!-- <dd>
-                                        <a href="#">menu2-1</a>
-                                        <a href="#">menu2-2</a>
-                                        <a href="#">menu2-3</a>
-                                    </dd> -->
                                 </dl>
                             </div>
                         </div>
@@ -174,11 +165,12 @@
                         <picture>
                             <!-- desktop -->
                             <source
-                                srcset="
-                                    https://images.unsplash.com/photo-1618522284999-3430d5f5f2da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                                "
+                                srcset="https://www.lghnh.com/images/main/new_main_visual.jpg"
                                 media="(min-width: 1280px)"
                             />
+                            <!-- <video autoplay playsinline preload muted class="new_visual_video">
+                                <source type="video/mp4" src="./assets/images/960 Compass 10s No Sound.mp4" />
+                            </video> -->
                             <!-- mobile & tablet -->
                             <source
                                 srcset="
@@ -192,48 +184,38 @@
                         </picture>
                         <div class="slide-txt">
                             <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
+                                <!-- <span>약속과 책임</span> -->
+                                <strong>지구와 사회</strong>
+                                <p>지속 가능한 삶의 일상화를 위해 노력합니다</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <img
-                                src="https://images.unsplash.com/photo-1712697889651-af232d2df3c8?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt=""
                             />
                         </picture>
                         <div class="slide-txt">
                             <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
+                                <!-- <span>NEW LISTING</span> -->
+                                <strong>Lead The Way</strong>
+                                <p>세계로 뻗어가는 대표 FMCG 기업</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <picture>
                             <img
-                                src="https://images.unsplash.com/photo-1650099667208-5c2110041c5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="https://img.freepik.com/free-photo/glossy-white-paint-smudge_23-2147746809.jpg?t=st=1718766090~exp=1718769690~hmac=138cb15002ae6454fe14ea4aed80dea3d29a5ad04da2021799502d065f5bbb2b&w=1060"
                                 alt=""
                             />
                         </picture>
                         <div class="slide-txt">
                             <div class="container">
-                                <span>NEW LISTING</span>
-                                <strong
-                                    >KOSEF <br />
-                                    글로벌AI 반도체</strong
-                                >
-                                <p>글로벌AI 반도체 기업에 집중투자하라!</p>
+                                <strong> Know Your Product</strong>
+                                <p>신뢰할 수 있는 성분을 확인해보세요</p>
                             </div>
                         </div>
                     </div>
@@ -241,6 +223,10 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+                <div class="scrolling">
+                    SCROLL
+                    <span class="gage"><span class="gage_bar"></span></span>
+                </div>
                 <!-- Pause/Play button -->
                 <button class="swiper-button-pause">Pause</button>
             </div>
@@ -251,9 +237,22 @@
                         유니레버코리아<br />
                         지속 가능한 청결한 삶을 일상으로
                     </div>
-                    <span class="sub_title">우리는 매일 전 세계 190개국, 34억명의 사람들과 함께합니다</span>
+                    <!-- <span class="sub_title">우리는 매일 전 세계 190개국, 34억명의 사람들과 함께합니다</span> -->
                 </div>
-
+                <section id="logos">
+                    <div class="text text1">
+                        <p>
+                            <img src="./assets/images/derma_bg.jpg" alt="RE + innovation" />
+                        </p>
+                        <p>혁신으로 자연에 다시 돌아가다</p>
+                    </div>
+                    <div class="text text2">
+                        <p>
+                            <img src="./assets/images/closeup_item.png" alt="REVATION" />
+                        </p>
+                    </div>
+                    <div class="cover"></div>
+                </section>
                 <section class="sec-type1 bg-grey sec-eft">
                     <div class="container">
                         <h2 class="sec-title">유니레버코리아의 브랜드</h2>
