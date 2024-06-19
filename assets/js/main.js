@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         centeredSlides: true,
         loop: true,
         autoplay: {
-            delay: 80000,
+            delay: 3000,
             disableOnInteraction: false,
         },
         pagination: {
@@ -55,16 +55,15 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     var busiswiper = new Swiper('.busiSwiper', {
-        effect: 'fade', // 페이드 효과 사용
+        effect: 'fade',
         loop: true,
         pagination: {
             el: '.swiper-pagination-busi',
             clickable: true,
         },
         autoplay: {
-            //자동슬라이드 (false-비활성화)
-            delay: 5000, // 시간 설정
-            disableOnInteraction: false, // false-스와이프 후 자동 재생
+            delay: 5000,
+            disableOnInteraction: false,
         },
         on: {
             slideChange: function () {
@@ -76,22 +75,38 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     function go01() {
-        busiswiper.slideToLoop(0, 1000, false) // 루프 사용 시 slideToLoop 사용
+        busiswiper.slideToLoop(0, 1000, false)
     }
     function go02() {
-        busiswiper.slideToLoop(1, 1000, false) // 루프 사용 시 slideToLoop 사용
+        busiswiper.slideToLoop(1, 1000, false)
     }
     function go03() {
-        busiswiper.slideToLoop(2, 1000, false) // 루프 사용 시 slideToLoop 사용
+        busiswiper.slideToLoop(2, 1000, false)
     }
 
-    // Add click event listeners to the list items
     const items = document.querySelectorAll('.business-list ul li')
     items.forEach((item, index) => {
         item.addEventListener('click', function () {
-            items.forEach((i) => i.classList.remove('active')) // Remove 'active' class from all items
-            item.classList.add('active') // Add 'active' class to the clicked item
-            busiswiper.slideToLoop(index) // Slide to the clicked item
+            items.forEach((i) => i.classList.remove('active'))
+            item.classList.add('active')
+            busiswiper.slideToLoop(index)
         })
     })
 })
+
+function goTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
+}
+function toggleTopButton() {
+    const topButton = document.querySelector('.top')
+    if (window.scrollY > 200) {
+        topButton.style.display = 'block'
+    } else {
+        topButton.style.display = 'none'
+    }
+}
+window.addEventListener('scroll', toggleTopButton)
+document.querySelector('.btn-top').addEventListener('click', goTop)

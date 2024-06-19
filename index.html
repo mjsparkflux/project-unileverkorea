@@ -33,11 +33,13 @@
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script defer src="./assets/js/lottie.js"></script>
         <script defer src="./assets/js/scroll.js"></script>
         <script defer src="./assets/js/comm.js"></script>
         <script defer src="./assets/js/main.js"></script>
@@ -159,32 +161,30 @@
                     </div>
                 </div>
             </header>
-            <div class="swiper slide-intro">
+            <!-- Hero Slider -->
+            <!-- <div class="swiper slide-intro">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture>
-                            <!-- desktop -->
-                            <source
-                                srcset="https://www.lghnh.com/images/main/new_main_visual.jpg"
-                                media="(min-width: 1280px)"
-                            />
-                            <!-- <video autoplay playsinline preload muted class="new_visual_video">
-                                <source type="video/mp4" src="./assets/images/960 Compass 10s No Sound.mp4" />
-                            </video> -->
-                            <!-- mobile & tablet -->
                             <source
                                 srcset="
-                                    https://images.unsplash.com/photo-1651340608985-d25cc73156e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                    https://images.unsplash.com/photo-1494280986787-c49b328829dd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+                                "
+                                media="(min-width: 1280px)"
+                            />
+
+                            <source
+                                srcset="
+                                    https://images.unsplash.com/photo-1494280986787-c49b328829dd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
                                 "
                             />
                             <img
-                                src="https://images.unsplash.com/photo-1651340608985-d25cc73156e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="https://images.unsplash.com/photo-1494280986787-c49b328829dd?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt=""
                             />
                         </picture>
                         <div class="slide-txt">
                             <div class="container">
-                                <!-- <span>약속과 책임</span> -->
                                 <strong>지구와 사회</strong>
                                 <p>지속 가능한 삶의 일상화를 위해 노력합니다</p>
                             </div>
@@ -199,7 +199,6 @@
                         </picture>
                         <div class="slide-txt">
                             <div class="container">
-                                <!-- <span>NEW LISTING</span> -->
                                 <strong>Lead The Way</strong>
                                 <p>세계로 뻗어가는 대표 FMCG 기업</p>
                             </div>
@@ -223,37 +222,58 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+
+                <button class="swiper-button-pause">Pause</button>
+            </div> -->
+            <div class="video">
+                <video
+                    loop=""
+                    muted=""
+                    preload="none"
+                    playsinline="true"
+                    data-testid="uol-c-video-player"
+                    autoplay="true"
+                >
+                    <source src="./assets/images/960 Compass 10s No Sound.mp4" type="video/mp4" alt="main_video" />
+                </video>
+                <!-- <div class="video-text">
+                    <h2>We are Unilever</h2>
+                    <p>지속 가능한 청결한 삶을 일상으로.</p>
+                </div> -->
                 <div class="scrolling">
                     SCROLL
                     <span class="gage"><span class="gage_bar"></span></span>
                 </div>
-                <!-- Pause/Play button -->
-                <button class="swiper-button-pause">Pause</button>
             </div>
 
+            <div id="animation"></div>
             <main id="main">
                 <div class="container-banner">
-                    <div class="banner">
-                        유니레버코리아<br />
-                        지속 가능한 청결한 삶을 일상으로
-                    </div>
-                    <!-- <span class="sub_title">우리는 매일 전 세계 190개국, 34억명의 사람들과 함께합니다</span> -->
+                    <div class="banner"></div>
+                    <p class="sub_title">
+                        유니레버코리아는 유니레버의 글로벌 네트워크와 협력하여 <br />한국 시장에서 지속 가능한 성장을
+                        추구하고 있으며,<br />
+                        국내 소비자들의 니즈를 반영한 맞춤형 제품과 서비스를 제공하고 있습니다.
+                    </p>
                 </div>
-                <section id="logos">
+                <div id="logos">
                     <div class="text text1">
                         <p>
                             <img src="./assets/images/derma_bg.jpg" alt="RE + innovation" />
                         </p>
-                        <p>혁신으로 자연에 다시 돌아가다</p>
+                        <p>지속 가능한 청결한 삶을 일상으로</p>
                     </div>
                     <div class="text text2">
                         <p>
                             <img src="./assets/images/closeup_item.png" alt="REVATION" />
                         </p>
                     </div>
+
                     <div class="cover"></div>
-                </section>
-                <section class="sec-type1 bg-grey sec-eft">
+                </div>
+
+                <!-- Section - Brand -->
+                <section class="sec-type1 sec-eft">
                     <div class="container">
                         <h2 class="sec-title">유니레버코리아의 브랜드</h2>
                         <a href="#" class="new_brand_category">
@@ -414,14 +434,14 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec-type2 sec-2 business">
+                <!-- Section - ESG -->
+                <section class="sec-type2 sec-2 bg-grey business">
                     <div class="container section_inner">
                         <div class="title_area">
                             <h2 class="sec-title">미래를 만드는 약속</h2>
                             <span class="sub_title">지속가능한 삶의 일상화를 위한 유니레버코리아의 책임</span>
                         </div>
 
-                        <!-- <div class="sec-content">섹션 내용</div> -->
                         <div class="content_area">
                             <div class="business-list">
                                 <ul>
@@ -483,6 +503,7 @@
                                                 조치로써 기후 변화에 대응하고 자연 보전을 보전하는데 기여하기 위한
                                                 노력을 기울이고 있습니다.
                                             </div>
+                                            <a class="more" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide bg02">
@@ -495,6 +516,7 @@
                                                 공정한 노동 환경을 조성하고, 다양성과 포용성을 증진하며, 지역 사회와의
                                                 상생을 도모합니다.
                                             </div>
+                                            <a class="more" href="#"></a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide bg03">
@@ -508,6 +530,7 @@
                                                 비즈니스 운영에 있어서 공급망 전반에 걸친 공정성 향상과 투명성을 높이고,
                                                 윤리적인 비즈니스 관행을 준수합니다.
                                             </div>
+                                            <a class="more" href="#"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +542,7 @@
                         </div>
                     </div>
                 </section>
-
+                <!-- Section - News -->
                 <section class="sec-type3 sec-eft">
                     <div class="container">
                         <h2 class="sec-title">새로운 소식</h2>
@@ -617,15 +640,20 @@
                     </div>
                 </section>
             </main>
+            <div class="top" style="display: block; bottom: 40px">
+                <button class="btn-top" type="button" title="Scroll to Top" onclick="goTop();">
+                    <span class="hide-txt">맨위로</span>
+                </button>
+            </div>
             <!-- footer -->
             <footer id="footer">
                 <div class="footer_cont clearfix pc-foot container">
                     <div class="footer_left">
-                        <img src="./assets/images/logo-animated.svg" alt="Unileverkorea" />
+                        <img src="./assets/images/logo-s.png" alt="Unileverkorea" />
                         <div class="copyright_txt">
                             <p>
                                 사업자등록번호 : 306-81-22430&nbsp;&nbsp;&nbsp;&nbsp;통신판매업신고번호 :
-                                제2009-경기성남-0510호
+                                제2009-서울-0510호
                             </p>
                             <p>
                                 대표이사 : 지용권&nbsp;&nbsp;&nbsp;&nbsp;주소 : 서울특별시 강남구 테헤란로 443 (우)06158
