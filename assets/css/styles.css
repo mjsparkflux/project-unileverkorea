@@ -1607,7 +1607,6 @@ video {
 }
 .business .business-list ul li a span {
   display: block;
-  height: 60px;
   margin-left: 80px;
 }
 .business .business-list ul li a:hover::before, .business .business-list ul li a.active::before {
@@ -1677,11 +1676,6 @@ video {
   font-weight: 600;
   line-height: 140%;
   margin-bottom: 16px;
-  font-family: inherit;
-}
-.business .busiSwiper .txt_area .sub_tit {
-  font-size: 21px;
-  margin-bottom: 19px;
   font-family: inherit;
 }
 .business .busiSwiper .txt_area .desc {

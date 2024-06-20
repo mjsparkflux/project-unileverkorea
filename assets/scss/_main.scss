@@ -525,7 +525,6 @@ video {
                     }
                     span {
                         display: block;
-                        height: 60px;
                         margin-left: 80px;
                     }
                     &:hover::before,
@@ -609,11 +608,6 @@ video {
                 font-weight: 600;
                 line-height: 140%;
                 margin-bottom: 16px;
-                font-family: inherit;
-            }
-            .sub_tit {
-                font-size: 21px;
-                margin-bottom: 19px;
                 font-family: inherit;
             }
             .desc {
