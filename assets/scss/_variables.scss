@@ -184,11 +184,25 @@ $letter-spacing-title: 0.5px;
 $letter-spacing-subtitle: -0.5px;
 
 // 반응형 미디어 쿼리
-$breakpoint-sm: 430px;
-$breakpoint-md: 744px;
-$breakpoint-lg: 992px;
+$breakpoint-sm: 431px;
+$breakpoint-md: 745px;
+$breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
 $breakpoint-xxl: 1440px;
+
+/* Tablet styles (min-width: 431px) */
+// @media (min-width: $breakpoint-sm) {
+// }
+
+/* PC styles (min-width: 745px) */
+// @media (min-width:$breakpoint-md) {
+// }
+//1024
+// @media (min-width: $breakpoint-lg) {
+// }
+/* Large screen styles (min-width: 1440px) */
+// @media (min-width: $breakpoint-xxl) {
+// }
 
 // layout
 $hdH: 60px;

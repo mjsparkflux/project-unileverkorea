@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* Tablet styles (min-width: 431px) */
+/* PC styles (min-width: 745px) */
+/* Large screen styles (min-width: 1440px) */
 /* reset */
 body,
 div,
@@ -280,7 +283,7 @@ legend {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 745px) {
   .container {
     padding: 0 30px;
   }
@@ -1005,7 +1008,7 @@ footer .footer_cont .footer_right .famliy_site button::after {
   position: absolute;
   top: 13px;
   right: 14px;
-  background: url("/static/images/footer_open.png") no-repeat center;
+  background: url("/assets/images/logo-s.png") no-repeat center;
   background-size: cover;
   transition: 0.3s;
 }
@@ -1439,6 +1442,36 @@ footer .footer_cont.mo-foot .copyright_txt.bottom p b {
   height: 100%;
   overflow: hidden;
 }
+.video .scrolling {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  z-index: 10;
+  color: white;
+  transform-origin: right bottom;
+  transform: rotate(90deg);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.video .scrolling .gage {
+  width: 80px;
+  height: 2px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+  overflow: hidden;
+}
+.video .scrolling .gage .gage_bar {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  animation: mainScroll 1s infinite linear;
+}
 
 .video-brand {
   padding: 90px 0;
@@ -1642,7 +1675,7 @@ video {
   position: relative;
 }
 
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 745px) {
   .slide-eft .swiper {
     width: 95%;
   }
@@ -2156,6 +2189,124 @@ video {
     font-size: 18px;
     line-height: 32px;
     margin-bottom: 20px;
+  }
+}
+/* Responsive styles for tablets (744px) */
+@media (max-width: 744px) {
+  .business {
+    flex-direction: column;
+  }
+  .business .section_inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .business .title_area {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .business .content_area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .business .business-list {
+    width: 100%;
+  }
+  .business .business-list ul {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .business .business-list ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .business .business-list ul li a {
+    height: 50px;
+  }
+  .business .business-list ul li a::before {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .business .business-list ul li a span {
+    margin-left: 60px;
+  }
+  .business .busiSwiper {
+    width: 100%;
+  }
+  .business .busiSwiper .img_area {
+    width: 100%;
+    height: auto;
+  }
+  .business .busiSwiper .txt_area {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .business .busiSwiper .txt_area .tit {
+    font-size: 20px;
+  }
+  .business .busiSwiper .txt_area .desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive styles for phones (430px) */
+@media (max-width: 430px) {
+  .business {
+    flex-direction: column;
+  }
+  .business .section_inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .business .title_area {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .business .content_area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .business .business-list {
+    width: 100%;
+  }
+  .business .business-list ul {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .business .business-list ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .business .business-list ul li a {
+    height: 40px;
+  }
+  .business .business-list ul li a::before {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .business .business-list ul li a span {
+    margin-left: 50px;
+  }
+  .business .busiSwiper {
+    width: 100%;
+  }
+  .business .busiSwiper .img_area {
+    width: 100%;
+    height: auto;
+  }
+  .business .busiSwiper .txt_area {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .business .busiSwiper .txt_area .tit {
+    font-size: 18px;
+  }
+  .business .busiSwiper .txt_area .desc {
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 .notice_banner {

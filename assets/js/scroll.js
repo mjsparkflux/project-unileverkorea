@@ -30,7 +30,7 @@ $(function () {
             opacity: 0,
         })
         .to(
-            '#logo .text1',
+            '#logos .text1',
             {
                 duration: 4,
                 opacity: 0,
