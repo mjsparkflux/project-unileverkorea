@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
             clickable: true,
         },
         autoplay: {
-            delay: 3000,
+            delay: 30000,
             disableOnInteraction: false,
         },
         on: {
