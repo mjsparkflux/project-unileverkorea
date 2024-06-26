@@ -1521,10 +1521,11 @@ video {
 }
 @media screen and (min-width: 1024px) {
   .banner {
-    width: 65%;
+    width: 100%;
     margin-top: 80px;
     margin-bottom: 80px;
-    border-radius: 20px;
+    border-radius: 0;
+    background-position: center;
   }
 }
 
