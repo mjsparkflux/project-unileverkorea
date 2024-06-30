@@ -2246,30 +2246,8 @@ video {
   section.business .business-list ul li a::after, section.business .business-list ul li a::before {
     display: none;
   }
-  section.business .business-list ul li a em {
-    width: 32px;
-    height: 32px;
-    background-size: 80%;
-    scale: 1;
-    border: none;
-    min-width: 48px;
-    min-height: 48px;
-    display: block;
-    background-repeat: no-repeat;
-  }
   section.business .business-list ul li a span {
     margin: 0;
-  }
-  section.business .business-list ul li a.active em, section.business .business-list ul li a:hover em {
-    width: 5.8651vw;
-    height: 5.8651vw;
-    background-size: 80%;
-    scale: 1;
-    border: none;
-    min-width: 48px;
-    min-height: 48px;
-    display: block;
-    background-repeat: no-repeat;
   }
   section.business .business-list .mo.txt_area {
     text-align: center;

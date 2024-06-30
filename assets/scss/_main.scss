@@ -1065,31 +1065,9 @@ video {
                         &::before {
                             display: none;
                         }
-                        em {
-                            width: 32px;
-                            height: 32px;
-                            background-size: 80%;
-                            scale: 1;
-                            border: none;
-                            min-width: 48px;
-                            min-height: 48px;
-                            display: block;
-                            background-repeat: no-repeat;
-                        }
+
                         span {
                             margin: 0;
-                        }
-                        &.active em,
-                        &:hover em {
-                            width: 5.8651vw;
-                            height: 5.8651vw;
-                            background-size: 80%;
-                            scale: 1;
-                            border: none;
-                            min-width: 48px;
-                            min-height: 48px;
-                            display: block;
-                            background-repeat: no-repeat;
                         }
                     }
                 }
