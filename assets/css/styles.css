@@ -2272,13 +2272,13 @@ video {
     background-repeat: no-repeat;
   }
   section.business .business-list ul li.busi01 a em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/sustainability.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
   }
   section.business .business-list ul li.busi01 a em li.busi02 a em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/work.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
   }
   section.business .business-list ul li.busi01 a em li.busi03 a em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/supply chain.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
   }
   section.business .business-list ul .mo.txt_area {
     text-align: center;
