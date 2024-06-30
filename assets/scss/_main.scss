@@ -925,6 +925,23 @@ video {
 @media (max-width: 1200px) {
     .m-show {
         display: block;
+        li.busi01 {
+            em {
+                background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png');
+            }
+        }
+
+        li.busi02 {
+            em {
+                background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png');
+            }
+
+            li.busi03 {
+                em {
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png');
+                }
+            }
+        }
     }
 
     .pc-show {
@@ -1166,29 +1183,29 @@ video {
                     }
                 }
             }
-        }
-        .busiSwiper {
-            width: 100%;
-            .img_area {
+
+            .busiSwiper {
                 width: 100%;
-                height: auto;
-            }
-            .txt_area {
-                width: 100%;
-                margin-left: 0;
-                text-align: center;
-                .tit {
-                    font-size: 20px;
+                .img_area {
+                    width: 100%;
+                    height: auto;
                 }
-                .desc {
-                    font-size: 16px;
-                    margin-bottom: 20px;
+                .txt_area {
+                    width: 100%;
+                    margin-left: 0;
+                    text-align: center;
+                    .tit {
+                        font-size: 20px;
+                    }
+                    .desc {
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
     }
 }
-
 /* Responsive styles for phones (430px) */
 @media (max-width: 430px) {
     .business {

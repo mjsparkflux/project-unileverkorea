@@ -2122,6 +2122,15 @@ video {
   .m-show {
     display: block;
   }
+  .m-show li.busi01 em {
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
+  }
+  .m-show li.busi02 em {
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
+  }
+  .m-show li.busi02 li.busi03 em {
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
+  }
   .pc-show {
     display: none !important;
   }
@@ -2334,22 +2343,22 @@ video {
   .business .business-list ul li a span {
     margin-left: 60px;
   }
-  .business .busiSwiper {
+  .business .business-list .busiSwiper {
     width: 100%;
   }
-  .business .busiSwiper .img_area {
+  .business .business-list .busiSwiper .img_area {
     width: 100%;
     height: auto;
   }
-  .business .busiSwiper .txt_area {
+  .business .business-list .busiSwiper .txt_area {
     width: 100%;
     margin-left: 0;
     text-align: center;
   }
-  .business .busiSwiper .txt_area .tit {
+  .business .business-list .busiSwiper .txt_area .tit {
     font-size: 20px;
   }
-  .business .busiSwiper .txt_area .desc {
+  .business .business-list .busiSwiper .txt_area .desc {
     font-size: 16px;
     margin-bottom: 20px;
   }
