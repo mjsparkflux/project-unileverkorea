@@ -1093,15 +1093,20 @@ video {
                         }
                     }
                 }
-
-                li.busi01 a em {
+            }
+            li.busi01 {
+                em {
                     background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png');
+                }
+            }
 
-                    li.busi02 a em {
-                        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png');
-                    }
+            li.busi02 {
+                em {
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png');
+                }
 
-                    li.busi03 a em {
+                li.busi03 {
+                    em {
                         background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png');
                     }
                 }
