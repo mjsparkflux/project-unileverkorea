@@ -135,6 +135,16 @@
             width: $hdH-xl;
             font-size: 1.4rem;
             color: $white;
+            &::after {
+                content: '';
+                display: block;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 0;
+                right: 10px;
+                background: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/logo-animated.svg');
+            }
         }
     }
     #gnb {
@@ -152,7 +162,7 @@
                 transition: all 0.3s;
             }
         }
-        // input이 체크되면
+
         #btnMenu {
             &:checked {
                 + .label-menu {
@@ -230,7 +240,7 @@
                     }
                     dd {
                         display: flex;
-                        // height: auto;
+
                         padding-bottom: 20px;
                     }
                 }
