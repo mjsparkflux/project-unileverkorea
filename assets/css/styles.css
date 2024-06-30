@@ -2122,15 +2122,6 @@ video {
   .m-show {
     display: block;
   }
-  .m-show li.busi01 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
-  }
-  .m-show li.busi02 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
-  }
-  .m-show li.busi02 li.busi03 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
-  }
   .pc-show {
     display: none !important;
   }
@@ -2279,15 +2270,6 @@ video {
     min-height: 48px;
     display: block;
     background-repeat: no-repeat;
-  }
-  section.business .business-list li.busi01 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
-  }
-  section.business .business-list li.busi02 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
-  }
-  section.business .business-list li.busi03 em {
-    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
   }
   section.business .business-list .mo.txt_area {
     text-align: center;
