@@ -254,8 +254,8 @@ video {
     align-items: center;
     height: 400px;
     width: 70%;
-    background: url(/project-unileverkorea/assets/images/best-friends-having-beauty-treatment-home.jpg) no-repeat center
-        center / cover fixed;
+    background: url(https://mjsparkflux.github.io/project-unileverkorea/assets/images/best-friends-having-beauty-treatment-home.jpg)
+        no-repeat center center / cover fixed;
     text-align: center;
     font-size: $font-size-title;
     font-weight: bold;
@@ -736,13 +736,13 @@ video {
                     }
                 }
                 &.busi01 a::before {
-                    background-image: url('/project-unileverkorea/assets/images/leaf-outline.png');
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png');
                 }
                 &.busi02 a::before {
-                    background-image: url('/project-unileverkorea/assets/images/people-outline.png');
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png');
                 }
                 &.busi03 a::before {
-                    background-image: url('/project-unileverkorea/assets/images/eye-outline.png');
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png');
                 }
                 &.active a::after {
                     width: 135px;
@@ -754,7 +754,7 @@ video {
 
     ul li a:hover::before,
     ul li.active a::before {
-        background-image: url('/project-unileverkorea/assets/images/leaf-outline.png');
+        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png');
         transition: 0.5s;
         background-repeat: no-repeat;
         background-size: 50%;
@@ -772,17 +772,17 @@ video {
 
     ul li.busi01 a:hover::before,
     ul li.busi01.active a::before {
-        background-image: url('/project-unileverkorea/assets/images/leaf-outline.png');
+        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png');
     }
 
     ul li.busi02 a:hover::before,
     ul li.busi02.active a::before {
-        background-image: url('/project-unileverkorea/assets/images/people-outline.png');
+        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png');
     }
 
     ul li.busi03 a:hover::before,
     ul li.busi03.active a::before {
-        background-image: url('/project-unileverkorea/assets/images/eye-outline.png');
+        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png');
     }
 
     ul li.active a::after {
@@ -823,7 +823,8 @@ video {
                     text-decoration: none;
                     position: absolute;
                     bottom: 10px;
-                    background: url('/project-unileverkorea/assets/images/btn_more.png') no-repeat center;
+                    background: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/btn_more.png')
+                        no-repeat center;
                     width: 60px;
                     height: 60px;
                     background-size: contain;
@@ -1094,14 +1095,14 @@ video {
                 }
 
                 li.busi01 a em {
-                    background-image: url('/project-unileverkorea/assets/images/sustainability.jpg');
+                    background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/sustainability.jpg');
 
                     li.busi02 a em {
-                        background-image: url('/project-unileverkorea/assets/images/work.jpg');
+                        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/work.jpg');
                     }
 
                     li.busi03 a em {
-                        background-image: url('/project-unileverkorea/assets/images/supply chain.jpg');
+                        background-image: url('https://mjsparkflux.github.io/project-unileverkorea/assets/images/supply chain.jpg');
                     }
                 }
 

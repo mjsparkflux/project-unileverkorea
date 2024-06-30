@@ -1535,7 +1535,7 @@ video {
   align-items: center;
   height: 400px;
   width: 70%;
-  background: url(/project-unileverkorea/assets/images/best-friends-having-beauty-treatment-home.jpg) no-repeat center center/cover fixed;
+  background: url(https://mjsparkflux.github.io/project-unileverkorea/assets/images/best-friends-having-beauty-treatment-home.jpg) no-repeat center center/cover fixed;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
@@ -1952,13 +1952,13 @@ video {
   border: 1px solid #665852;
 }
 .business .business-list ul li.busi01 a::before {
-  background-image: url("/project-unileverkorea/assets/images/leaf-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
 }
 .business .business-list ul li.busi02 a::before {
-  background-image: url("/project-unileverkorea/assets/images/people-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
 }
 .business .business-list ul li.busi03 a::before {
-  background-image: url("/project-unileverkorea/assets/images/eye-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
 }
 .business .business-list ul li.active a::after {
   width: 135px;
@@ -1966,7 +1966,7 @@ video {
 }
 .business ul li a:hover::before,
 .business ul li.active a::before {
-  background-image: url("/project-unileverkorea/assets/images/leaf-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
   transition: 0.5s;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -1978,15 +1978,15 @@ video {
 }
 .business ul li.busi01 a:hover::before,
 .business ul li.busi01.active a::before {
-  background-image: url("/project-unileverkorea/assets/images/leaf-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/leaf-outline.png");
 }
 .business ul li.busi02 a:hover::before,
 .business ul li.busi02.active a::before {
-  background-image: url("/project-unileverkorea/assets/images/people-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/people-outline.png");
 }
 .business ul li.busi03 a:hover::before,
 .business ul li.busi03.active a::before {
-  background-image: url("/project-unileverkorea/assets/images/eye-outline.png");
+  background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/eye-outline.png");
 }
 .business ul li.active a::after {
   width: 135px;
@@ -2026,7 +2026,7 @@ video {
   text-decoration: none;
   position: absolute;
   bottom: 10px;
-  background: url("/project-unileverkorea/assets/images/btn_more.png") no-repeat center;
+  background: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/btn_more.png") no-repeat center;
   width: 60px;
   height: 60px;
   background-size: contain;
@@ -2272,13 +2272,13 @@ video {
     background-repeat: no-repeat;
   }
   section.business .business-list ul li.busi01 a em {
-    background-image: url("/project-unileverkorea/assets/images/sustainability.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/sustainability.jpg");
   }
   section.business .business-list ul li.busi01 a em li.busi02 a em {
-    background-image: url("/project-unileverkorea/assets/images/work.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/work.jpg");
   }
   section.business .business-list ul li.busi01 a em li.busi03 a em {
-    background-image: url("/project-unileverkorea/assets/images/supply chain.jpg");
+    background-image: url("https://mjsparkflux.github.io/project-unileverkorea/assets/images/supply chain.jpg");
   }
   section.business .business-list ul .mo.txt_area {
     text-align: center;
