@@ -33,6 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
     //     }
     //     isPaused = !isPaused
     // })
+    document.addEventListener('DOMContentLoaded', function () {
+        var video = document.querySelector('video')
+
+        video.muted = true
+        video.play().catch(function (error) {
+            console.log('Autoplay was prevented:', error)
+        })
+    })
 
     var swiperEft = new Swiper('.slide-eft .swiper', {
         slidesPerView: 1,
