@@ -245,6 +245,7 @@ video {
         letter-spacing: $letter-spacing-subtitle;
         font-weight: $font-weight-medium;
         text-align: center;
+        margin-top: 32px;
     }
 }
 
@@ -260,7 +261,7 @@ video {
     font-size: $font-size-title;
     font-weight: bold;
     color: #fff;
-    margin: 32px auto;
+    margin: 0 auto;
     border-radius: 10px;
 
     @media screen and (max-width: 1024px) {
@@ -497,7 +498,7 @@ video {
 
         .swiper {
             overflow: visible;
-            width: 100%;
+            width: 110%;
             margin: 0;
             margin-top: 48px;
 
