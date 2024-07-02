@@ -37,9 +37,19 @@ document.addEventListener('DOMContentLoaded', function () {
         var video = document.querySelector('video')
 
         video.muted = true
-        video.play().catch(function (error) {
-            console.log('Autoplay was prevented:', error)
-        })
+        video.autoplay = true
+
+        var playPromise = video.play()
+
+        if (playPromise !== undefined) {
+            playPromise
+                .then((_) => {
+                    console.log('Autoplay started')
+                })
+                .catch((error) => {
+                    console.log('Autoplay was prevented:', error)
+                })
+        }
     })
 
     var swiperEft = new Swiper('.slide-eft .swiper', {
