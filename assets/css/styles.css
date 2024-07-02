@@ -290,7 +290,7 @@ legend {
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1340px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -406,7 +406,7 @@ legend {
   align-items: center;
   height: 80px;
   width: 80px;
-  font-size: 1.4rem;
+  font-size: 18px;
   color: #fff;
 }
 #header #logo a img {
@@ -612,7 +612,7 @@ legend {
     padding: 10px 0 20px;
   }
   #header #gnb .top-menu dl dt {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 400;
   }
   #header #gnb .top-menu dl dt a {
@@ -620,7 +620,7 @@ legend {
     display: flex;
     align-items: center;
     height: 80px;
-    padding: 0 40px;
+    padding: 0 24px;
   }
   #header #gnb .top-menu dl dt a::before {
     content: "";
@@ -766,6 +766,7 @@ legend {
 .sec-type2 .sec-title,
 .sec-type3 .sec-title {
   font-size: 40px;
+  font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.5px;
   color: #000;
@@ -1546,14 +1547,12 @@ video {
   font-size: 40px;
   font-weight: bold;
   color: #fff;
-  margin: 20px auto;
+  margin: 0 auto;
   border-radius: 0;
 }
 @media screen and (max-width: 1024px) {
   .banner {
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px;
     border-radius: 0;
     background-position: center;
   }
@@ -1773,7 +1772,7 @@ video {
 .sec-eft .slide-eft .swiper .swiper-wrapper .swiper-slide {
   height: 340px;
   background: #f8f8f8;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .sec-eft .slide-eft .new_brand_link {

@@ -260,13 +260,11 @@ video {
     font-size: $font-size-title;
     font-weight: bold;
     color: #fff;
-    margin: 20px auto;
+    margin: 0 auto;
     border-radius: 0;
 
     @media screen and (max-width: 1024px) {
         width: 100%;
-        margin-top: 80px;
-        margin-bottom: 80px;
         border-radius: 0;
         background-position: center;
     }
@@ -514,7 +512,7 @@ video {
                 .swiper-slide {
                     height: 340px;
                     background: $gray-5;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     overflow: hidden;
                 }
             }
@@ -664,7 +662,7 @@ video {
 }
 
 //********Section - ESG-Business*****
-//*******************************
+//***********************************
 .business {
     display: flex;
     justify-content: center;

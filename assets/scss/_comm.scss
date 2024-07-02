@@ -22,7 +22,7 @@
 // desktop (1280px) 이상일 때
 @media screen and (min-width: $breakpoint-xl) {
     .container {
-        max-width: 1340px;
+        max-width: 1260px;
         margin: 0 auto;
         padding: 0 30px;
     }
@@ -133,7 +133,7 @@
             @include flexitems;
             height: 80px;
             width: 80px;
-            font-size: 1.4rem;
+            font-size: $font-size-l;
             color: $white;
             img {
                 height: 100%;
@@ -365,13 +365,13 @@
                         }
                     }
                     dt {
-                        font-size: 1.2rem;
+                        font-size: 18px;
                         font-weight: 400;
                         a {
                             position: relative;
                             @include flexitems;
                             height: $hdH-xl;
-                            padding: 0 40px;
+                            padding: 0 24px;
                             &::before {
                                 content: '';
                                 position: absolute;
@@ -522,6 +522,7 @@
     margin: 120px 0;
     .sec-title {
         font-size: $font-size-title;
+        font-weight: $font-weight-bold;
         line-height: $line-height-m;
         letter-spacing: $letter-spacing-title;
         color: $black;
