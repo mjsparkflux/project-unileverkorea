@@ -409,6 +409,12 @@ legend {
   font-size: 1.4rem;
   color: #fff;
 }
+#header #logo a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #header #gnb {
   display: flex;
 }
