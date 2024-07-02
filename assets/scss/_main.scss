@@ -260,7 +260,7 @@ video {
     font-size: $font-size-title;
     font-weight: bold;
     color: #fff;
-    margin: 0 auto;
+    margin: 32px auto;
     border-radius: 0;
 
     @media screen and (max-width: 1024px) {
@@ -672,6 +672,7 @@ video {
     .section_inner {
         padding: 90px 0;
         width: calc(100% - 120px);
+        max-width: 1200px;
     }
     .title_area {
         margin-bottom: 42px;

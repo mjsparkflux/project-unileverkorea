@@ -1547,7 +1547,7 @@ video {
   font-size: 40px;
   font-weight: bold;
   color: #fff;
-  margin: 0 auto;
+  margin: 32px auto;
   border-radius: 0;
 }
 @media screen and (max-width: 1024px) {
@@ -1895,6 +1895,7 @@ video {
 .business .section_inner {
   padding: 90px 0;
   width: calc(100% - 120px);
+  max-width: 1200px;
 }
 .business .title_area {
   margin-bottom: 42px;
